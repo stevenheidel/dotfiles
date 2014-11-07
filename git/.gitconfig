@@ -1,0 +1,7 @@
+[user]
+        name = Steven Heidel
+        email = sheidel@linkedin.com
+[branch]
+        autosetuprebase = remote
+[merge]
+        ff = only
