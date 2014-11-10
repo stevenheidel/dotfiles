@@ -51,3 +51,4 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.zshconfig ]] && source ~/.zshconfig
+[[ -f ~/.path ]] && source ~/.path
