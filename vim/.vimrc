@@ -82,3 +82,7 @@ endif
 inoremap <C-U> <C-G>u<C-U>
 
 "" Personal
+
+" Don't save backup files in current directory
+set backupdir=~/.vim/tmp,.
+set directory=~/.vim/tmp,.
