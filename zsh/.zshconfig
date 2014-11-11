@@ -8,5 +8,3 @@ bindkey '^r' history-incremental-search-backward
 # Use vim cli mode
 bindkey '^P' up-history
 bindkey '^N' down-history
-
-setxkbmap -option ctrl:nocaps
