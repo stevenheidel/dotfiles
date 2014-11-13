@@ -52,6 +52,5 @@ export TERM=xterm-256color
 
 source $ZSH/oh-my-zsh.sh
 
-[[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.zshconfig ]] && source ~/.zshconfig
-[[ -f ~/.path ]] && source ~/.path
+[[ -f ~/scripts/liconfig ]] && source ~/scripts/liconfig
