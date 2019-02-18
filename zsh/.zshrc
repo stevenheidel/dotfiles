@@ -70,11 +70,13 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.7-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
-alias grun='java -cp "/usr/local/lib/antlr-4.7-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+alias grun='java -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
 
 export PATH="/Users/steven/.pyenv/bin:$PATH"
 eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 
 export PATH="/Users/steven/go/bin:$PATH"
+export PATH="/Users/steven/.local/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
