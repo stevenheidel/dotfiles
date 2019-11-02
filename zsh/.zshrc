@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/steven/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,10 +51,9 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux vi-mode)
+plugins=(fzf git tmux zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -70,13 +69,16 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
-alias grun='java -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+source ~/.airlab/shellhelper.sh
 
-export PATH="/Users/steven/.pyenv/bin:$PATH"
-eval "$(pyenv init - --no-rehash)"
-eval "$(pyenv virtualenv-init -)"
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
-export PATH="/Users/steven/go/bin:$PATH"
-export PATH="/Users/steven/.local/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export K2=1
+export ONETOUCHGEN_ACCEPT_EULA=y
+
+export CDPATH=.\
+:${HOME}\
+:${HOME}/airlab\
+:${HOME}/airlab/repos\
+:${HOME}/airlab/repos/treehouse\
+:${HOME}/airlab/repos/treehouse/projects\
