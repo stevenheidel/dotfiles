@@ -68,17 +68,3 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-source ~/.airlab/shellhelper.sh
-
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
-export K2=1
-export ONETOUCHGEN_ACCEPT_EULA=y
-
-export CDPATH=.\
-:${HOME}\
-:${HOME}/airlab\
-:${HOME}/airlab/repos\
-:${HOME}/airlab/repos/treehouse\
-:${HOME}/airlab/repos/treehouse/projects\
