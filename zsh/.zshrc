@@ -68,3 +68,8 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# isengard
+eval "$(isengardcli shell-profile)"
+
+export PATH="/usr/local/opt/python@3.8/libexec/bin:$PATH"
